@@ -1,6 +1,6 @@
-# Blazepose tracking with DepthAI
+# Blazepose yoga pose classification
 
-Running Google Mediapipe body pose tracking models on [DepthAI](https://docs.luxonis.com/en/gen2/) hardware (OAK-1, OAK-D, ...)
+Running Google Mediapipe body pose tracking models on [DepthAI](https://docs.luxonis.com/en/gen2/) hardware (OAK-1, OAK-D, ...) and classifying yoga poses.
 
 ![Pose demo](img/final.gif)
 
