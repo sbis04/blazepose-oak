@@ -1,7 +1,7 @@
 import argparse
 import csv
 import os
-from math import atan2
+from math import acos, atan2
 from pathlib import Path
 
 import cv2
@@ -499,6 +499,8 @@ class PoseClassifier(object):
         # Filter by mean distance.
         #
         # After removing outliers we can find the nearest pose by mean distance.
+
+        ## HERE2
         mean_dist_heap = []
         for _, sample_idx in max_dist_heap:
             sample = self._pose_samples[sample_idx]
@@ -512,6 +514,11 @@ class PoseClassifier(object):
 
         mean_dist_heap = sorted(mean_dist_heap, key=lambda x: x[0])
         mean_dist_heap = mean_dist_heap[:self._top_n_by_mean_distance]
+
+        print(mean_dist_heap[0])
+        print(mean_dist_heap)
+        for _, k in mean_dist_heap:
+            print(self._pose_samples[k].class_name)
 
         # Collect results into map: (class_name -> n_samples)
         class_names = [
@@ -589,6 +596,7 @@ class BlazeposeDepthai:
                  full_body=True,
                  use_gesture=False,
                  use_pose=False,
+                 get_angles = False,
                  smoothing=True,
                  filter_window_size=5,
                  filter_velocity_scale=10,
@@ -606,6 +614,7 @@ class BlazeposeDepthai:
         self.full_body = full_body
         self.use_gesture = use_gesture
         self.use_pose = use_pose
+        self.get_angles = get_angles
         self.smoothing = smoothing
         self.show_3d = show_3d
         self.crop = crop
@@ -670,6 +679,7 @@ class BlazeposeDepthai:
         self.show_scores = False
         self.show_gesture = self.use_gesture
         self.show_pose = self.use_pose
+        self.show_angles = self.get_angles
         self.show_fps = True
 
         if self.show_3d:
@@ -873,6 +883,9 @@ class BlazeposeDepthai:
             if self.use_pose:
                 self.recognize_pose(region)
 
+            if self.get_angles:
+                self.getAngles(region,self.get_angles)
+
     def lm_render(self, frame, region):
         if region.lm_score > self.lm_score_threshold:
             if self.show_rot_rect:
@@ -987,8 +1000,16 @@ class BlazeposeDepthai:
         r.pose = pose
         print(pose)
 
+        # compare current pose with perfect pose to get accuracy
+
+        # get landmarks of perfect pose from existing csv
+
+        # get landmarks of current pose from region
+
+        # calculate accuracy
+
         rounded_accuracy = round(r.lm_score, 2)
-        print(rounded_accuracy)
+        print(max_sample)
 
         # data = {"pose": pose, "accuracy": rounded_accuracy}
 
@@ -997,6 +1018,71 @@ class BlazeposeDepthai:
         #     db.child("123").set(data)
         # else:
         #     db.child("123").update(data)
+
+    def getAngles(self, r, expected_pose):
+        def getAngle(firstPoint, midPoint, lastPoint):
+            result = np.degrees(atan2(lastPoint[1] - midPoint[1],lastPoint[0] - midPoint[0])
+                - atan2(firstPoint[1] - midPoint[1], firstPoint[0] - midPoint[0]))
+            result = abs(result) # Angle should never be negative
+            if (result > 180) :
+                result = 360.0 - result # Always get the acute representation of the angle
+
+                result = 360.0 - result # Always get the acute representation of the angle        
+            return result
+        # print(r.landmarks_abs[14,:2])
+        # print(r.landmarks_abs[14])
+        # print(r.landmarks_abs[14,:3])
+
+        def get3DAngle(A, B, C):
+            # v1 = {A[0] - B[0], A[1] - B[1], A[2] - B[2]}
+            # v2 = {C[0] - B[0], C[1] - B[1], C[2] - B[2]}
+            # v1mag = (A[0] * A[0] + A[1] * A[1] + A[2] * A[2])**(1/2)
+            # v1norm = {A[0] / v1mag, A[1] / v1mag, A[2] / v1mag}
+            # v2mag = (B[0] * B[0] + B[1] * B[1] + B[2] * B[2])**(1/2)
+            # v2norm = {B[0] / v2mag, B[1] / v2mag, B[2] / v2mag}
+            # res = v1norm[0] * v2norm[0] + v1norm[1] * v2norm[1] + v1norm[2] * v2norm[2]
+            # angle = acos(res)
+            a = np.array(A)
+            b = np.array(B)
+            c = np.array(C)
+
+            ba = a - b
+            bc = c - b
+
+            cosine_angle = np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc))
+            angle = np.arccos(cosine_angle)
+            return np.degrees(angle)
+
+        LEFT_ARM_ANGLE = get3DAngle(r.landmarks_abs[12,:3],r.landmarks_abs[14,:3],r.landmarks_abs[16,:3])
+        RIGHT_ARM_ANGLE = get3DAngle(r.landmarks_abs[11,:3],r.landmarks_abs[13,:3],r.landmarks_abs[15,:3])
+
+        LEFT_HAND_HIP_ANGLE = get3DAngle(r.landmarks_abs[14,:3],r.landmarks_abs[12,:3],r.landmarks_abs[24,:3])
+        RIGHT_HAND_HIP_ANGLE = get3DAngle(r.landmarks_abs[13,:3],r.landmarks_abs[21,:3],r.landmarks_abs[23,:3])
+
+        LEFT_LEG_ANGLE = get3DAngle(r.landmarks_abs[24,:3],r.landmarks_abs[26,:3],r.landmarks_abs[28,:3])
+        RIGHT_LEG_ANGLE = get3DAngle(r.landmarks_abs[23,:3],r.landmarks_abs[25,:3],r.landmarks_abs[27,:3])
+
+        LEFT_HIP_KNEE_ANGLE = get3DAngle(r.landmarks_abs[12,:3],r.landmarks_abs[24,:3],r.landmarks_abs[26,:3])
+        RIGHT_HIP_KNEE_ANGLE = get3DAngle(r.landmarks_abs[11,:3],r.landmarks_abs[23,:3],r.landmarks_abs[25,:3])
+
+        ANGLE_BETWEEN_LEGS = get3DAngle(r.landmarks_abs[26,:3],r.landmarks_abs[0,:3],r.landmarks_abs[25,:3])
+
+        print("LEFT_ARM_ANGLE",LEFT_ARM_ANGLE)
+        print("RIGHT_ARM_ANGLE",RIGHT_ARM_ANGLE)
+
+        print("LEFT_HAND_HIP_ANGLE",LEFT_HAND_HIP_ANGLE)
+        print("RIGHT_HAND_HIP_ANGLE",RIGHT_HAND_HIP_ANGLE)
+
+        print("LEFT_LEG_ANGLE",LEFT_LEG_ANGLE)
+        print("RIGHT_LEG_ANGLE",RIGHT_LEG_ANGLE)
+
+        print("LEFT_HIP_KNEE_ANGLE", LEFT_HIP_KNEE_ANGLE)
+        print("RIGHT_HIP_KNEE_ANGLE", RIGHT_HIP_KNEE_ANGLE)
+
+        print("ANGLE_BETWEEN_LEGS", ANGLE_BETWEEN_LEGS)
+
+        if expected_pose=="child":
+            pass
 
     def run(self):
 
@@ -1123,7 +1209,7 @@ class BlazeposeDepthai:
                     50, 50), size=1, color=(240, 180, 100))
 
             # For displaying the camera view on this system
-            # cv2.imshow("Blazepose", annotated_frame)
+            cv2.imshow("Blazepose", annotated_frame)
 
             # HERE:
             # For streaming to RTMP URL
@@ -1198,6 +1284,8 @@ if __name__ == "__main__":
                         help="Force multiple person detection (at your own risk)")
     parser.add_argument('--internal_fps', type=int, default=15,
                         help="Fps of internal color camera. Too high value lower NN fps (default=%(default)i)")
+    parser.add_argument('--angles','--a', type=str, 
+                        help="Get body angles")
 
     args = parser.parse_args()
 
@@ -1217,9 +1305,12 @@ if __name__ == "__main__":
                           filter_velocity_scale=args.filter_velocity_scale,
                           use_gesture=args.gesture,
                           use_pose=args.pose,
+                          get_angles = args.angles,
                           show_3d=args.show_3d,
                           crop=args.crop,
                           multi_detection=args.multi_detection,
                           output=args.output,
                           internal_fps=args.internal_fps)
+    # python3 BlazeposeDepthai.py  --input "
+
     ht.run()
