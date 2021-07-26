@@ -1087,6 +1087,16 @@ class BlazeposeDepthai:
 
         if expected_pose=="child":
             pass
+        elif expected_pose=="mountain":
+            pass
+        elif expected_pose=="mountain":
+            pass
+        elif expected_pose=="mountain":
+            pass
+        elif expected_pose=="mountain":
+            pass
+        elif expected_pose=="mountain":
+            pass
 
     def run(self):
 
