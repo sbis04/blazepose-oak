@@ -1087,40 +1087,40 @@ class BlazeposeDepthai:
 
         if expected_pose=="child":
             pose = POSES["child"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]>=LEFT_ARM_ANGLE and LEFT_ARM_ANGLE<=pose["LEFT_ARM_ANGLE"]:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]>=20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
+            elif pose["RIGHT_HIP_KNEE_ANGLE"]==20 and pose["RIGHT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["ANGLE_BETWEEN_LEGS"]==20:
                 pass
             
         elif expected_pose=="mountain":
             pose = POSES["mountain"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1129,19 +1129,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="tree":
             pose = POSES["tree"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1151,19 +1151,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="downwardDog":
             pose = POSES["downwardDog"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1172,19 +1172,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="triangle":
             pose = POSES["triangle"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1193,19 +1193,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="cobra":
             pose = POSES["cobra"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1214,19 +1214,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="simple":
             pose = POSES["simple"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1235,19 +1235,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="boat":
             pose = POSES["boat"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1256,19 +1256,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="camel":
             pose = POSES["camel"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1277,19 +1277,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="locust":
             pose = POSES["locust"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1298,19 +1298,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="plank":
             pose = POSES["plank"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1319,19 +1319,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="chair":
             pose = POSES["chair"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1340,19 +1340,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="fish":
             pose = POSES["fish"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1361,19 +1361,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="warrior1":
             pose = POSES["warrior1"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1382,19 +1382,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="catcow":
             pose = POSES["catcow"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1403,19 +1403,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="forward":
             pose = POSES["forward"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1424,19 +1424,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="ragdoll":
             pose = POSES["ragdoll"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1445,19 +1445,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Sphinx":
             pose = POSES["Sphinx"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1466,19 +1466,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Seated Forward Bend":
             pose = POSES["Seated Forward Bend"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1487,19 +1487,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Legs_up_the_Wall_Pose":
             pose = POSES["Legs_up_the_Wall_Pose"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1508,19 +1508,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Half spinal twist pose ":
             pose = POSES["Half spinal twist pose"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1529,19 +1529,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="cow_face":
             pose = POSES["cow_face"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1550,19 +1550,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="bridge":
             pose = POSES["bridge"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1571,19 +1571,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Wide-legged forward bend pose":
             pose = POSES["Wide-legged forward bend pose"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1592,19 +1592,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Head to knee":
             pose = POSES["Head to knee"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1613,19 +1613,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="staff":
             pose = POSES["staff"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1634,19 +1634,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Seated Wide Angle":
             pose = POSES["Seated Wide Angle"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
@@ -1655,19 +1655,19 @@ class BlazeposeDepthai:
             
         elif expected_pose=="Butterfly":
             pose = POSES["Butterfly"]
-            if pose["LEFT_ARM_ANGLE"]==20:
+            if pose["LEFT_ARM_ANGLE"]==20 and pose["LEFT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_ARM_ANGLE"]==20:
+            elif pose["RIGHT_ARM_ANGLE"]==20 and pose["RIGHT_ARM_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20:
+            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20:
+            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_LEG_ANGLE"]==20:
+            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["RIGHT_LEG_ANGLE"]==20:
+            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
                 pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20:
+            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
                 pass
             elif pose["RIGHT_HIP_KNEE_ANGLE"]==20:
                 pass
