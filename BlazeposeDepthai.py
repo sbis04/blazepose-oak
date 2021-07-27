@@ -961,7 +961,7 @@ class BlazeposeDepthai:
         left_pose = int((left_arm_angle + 202.5) / 45)
         r.gesture = semaphore_flag.get((right_pose, left_pose), None)
 
-    def recognize_pose(self, r):
+    def recognize_pose(self, r, expected_pose):
 
         r.pose = "Pose not detected"
 
@@ -1023,7 +1023,6 @@ class BlazeposeDepthai:
         # else:
         #     db.child("123").update(data)
 
-    def getAngles(self, r, expected_pose):
         def getAngle(firstPoint, midPoint, lastPoint):
             result = np.degrees(atan2(lastPoint[1] - midPoint[1],lastPoint[0] - midPoint[0])
                 - atan2(firstPoint[1] - midPoint[1], firstPoint[0] - midPoint[0]))
@@ -1103,35 +1102,10 @@ class BlazeposeDepthai:
                 diff_dict.move_to_end(key) 
             #print(diff_dict)
             
-            for key, val in diff_dict:
-                if val<0:
-                    direction = stretch
-                   else:
-                    direction = constrict
-                joint = key
-                feedback += "You need to"+direction+
-                
-                
-                
-                
-            if pose["LEFT_ARM_ANGLE"]>=LEFT_ARM_ANGLE and LEFT_ARM_ANGLE<=pose["LEFT_ARM_ANGLE"]:
-                pass
-            elif pose["RIGHT_ARM_ANGLE"]>=20 and pose["RIGHT_ARM_ANGLE"]<=20:
-                pass
-            elif pose["LEFT_HAND_HIP_ANGLE"]==20 and pose["LEFT_HAND_HIP_ANGLE"]<=20:
-                pass
-            elif pose["RIGHT_HAND_HIP_ANGLE"]==20 and pose["RIGHT_HAND_HIP_ANGLE"]<=20:
-                pass
-            elif pose["LEFT_LEG_ANGLE"]==20 and pose["LEFT_LEG_ANGLE"]<=20:
-                pass
-            elif pose["RIGHT_LEG_ANGLE"]==20 and pose["RIGHT_LEG_ANGLE"]<=20:
-                pass
-            elif pose["LEFT_HIP_KNEE_ANGLE"]==20 and pose["LEFT_HIP_KNEE_ANGLE"]<=20:
-                pass
-            elif pose["RIGHT_HIP_KNEE_ANGLE"]==20 and pose["RIGHT_HIP_KNEE_ANGLE"]<=20:
-                pass
-            elif pose["ANGLE_BETWEEN_LEGS"]==20:
-                pass
+            # jointname1 _positive*jointname_name
+            
+            for key, val in diff_dict[:2]:
+                feedback += key+":"+val+"_"        
             
         elif expected_pose=="mountain":
             pose = POSES["mountain"]
