@@ -1084,9 +1084,36 @@ class BlazeposeDepthai:
         print("RIGHT_HIP_KNEE_ANGLE", RIGHT_HIP_KNEE_ANGLE)
 
         print("ANGLE_BETWEEN_LEGS", ANGLE_BETWEEN_LEGS)
+        from collections import OrderedDict
+        diff_dict = OrderedDict()
+        feedback = ""
 
         if expected_pose=="child":
             pose = POSES["child"]
+            diff_dict["LEFT_ARM_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["RIGHT_ARM_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["LEFT_HAND_HIP_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["RIGHT_HAND_HIP_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["RIGHT_LEG_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["LEFT_HIP_KNEE_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["RIGHT_HIP_KNEE_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            diff_dict["ANGLE_BETWEEN_LEGS"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
+            
+            diff_dict = sorted(diff_dict.items(), key=lambda item: abs(item[1])):
+                diff_dict.move_to_end(key) 
+            #print(diff_dict)
+            
+            for key, val in diff_dict:
+                if val<0:
+                    direction = stretch
+                   else:
+                    direction = constrict
+                joint = key
+                feedback += "You need to"+direction+
+                
+                
+                
+                
             if pose["LEFT_ARM_ANGLE"]>=LEFT_ARM_ANGLE and LEFT_ARM_ANGLE<=pose["LEFT_ARM_ANGLE"]:
                 pass
             elif pose["RIGHT_ARM_ANGLE"]>=20 and pose["RIGHT_ARM_ANGLE"]<=20:
