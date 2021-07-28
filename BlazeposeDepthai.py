@@ -1003,15 +1003,7 @@ class BlazeposeDepthai:
 
         r.pose = pose
         print(pose)
-
-        # compare current pose with perfect pose to get accuracy
-
-        # get landmarks of perfect pose from existing csv
-
-        # get landmarks of current pose from region
-
-        # calculate accuracy
-
+        
         rounded_accuracy = round(r.lm_score, 2)
         print(max_sample)
 
