@@ -79,6 +79,27 @@ POSE_DETECTION_MODEL = SCRIPT_DIR / "models/pose_detection.blob"
 FULL_BODY_LANDMARK_MODEL = SCRIPT_DIR / "models/pose_landmark_full_body.blob"
 UPPER_BODY_LANDMARK_MODEL = SCRIPT_DIR / "models/pose_landmark_upper_body.blob"
 
+POSES = {
+    "mountain" : {
+        "LEFT_ARM_ANGLE" : 180,
+        "RIGHT_ARM_ANGLE" : 180,
+
+        "LEFT_HAND_HIP_ANGLE" : 90,
+        "RIGHT_HAND_HIP_ANGLE" : 90,
+
+        "LEFT_LEG_ANGLE" : 180,
+        "RIGHT_LEG_ANGLE" : 180,
+
+        "LEFT_HIP_KNEE_ANGLE" : 180,
+        "RIGHT_HIP_KNEE_ANGLE" : 180,
+
+        "ANGLE_BETWEEN_LEGS" : 0,
+    },
+
+
+
+}
+
 
 class EMADictSmoothing(object):
     """Smoothes pose classification."""
@@ -1078,7 +1099,20 @@ class BlazeposeDepthai:
         from collections import OrderedDict
         diff_dict = OrderedDict()
         feedback = ""
-        pose = POSES["child"]
+        if expected_pose == "child":
+            pose = POSES["child"]
+        elif expected_pose == "child":
+            pose = POSES["child"]
+        elif expected_pose == "child":
+            pose = POSES["child"]
+        elif expected_pose == "child":
+            pose = POSES["child"]
+        elif expected_pose == "child":
+            pose = POSES["child"]
+        elif expected_pose == "child":
+            pose = POSES["child"]
+        elif expected_pose == "child":
+            pose = POSES["child"]
         diff_dict["LEFT_ARM_ANGLE"] = pose["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
         diff_dict["RIGHT_ARM_ANGLE"] = pose["RIGHT_ARM_ANGLE"]-RIGHT_ARM_ANGLE
         diff_dict["LEFT_HAND_HIP_ANGLE"] = pose["LEFT_HAND_HIP_ANGLE"]-LEFT_HAND_HIP_ANGLE
@@ -1088,14 +1122,13 @@ class BlazeposeDepthai:
         diff_dict["RIGHT_HIP_KNEE_ANGLE"] = pose["LEFT_HIP_KNEE_ANGLE"]-RIGHT_HIP_KNEE_ANGLE
         diff_dict["ANGLE_BETWEEN_LEGS"] = pose["ANGLE_BETWEEN_LEGS"]-ANGLE_BETWEEN_LEGS
 
-        diff_dict = sorted(diff_dict.items(), key=lambda item: abs(item[1])):
-            diff_dict.move_to_end(key) 
+        diff_dict = sorted(diff_dict.items(), key=lambda item: abs(item[1]))
         #print(diff_dict)
 
         # jointname1 _positive:jointname_name#
 
         for key in list(diff_dict[:2]):
-            feedback += key+":"+diff_dict[val]+"#"        
+            feedback += key+":"+diff_dict[key]+"#"        
         print(feedback)
             
     def run(self):
