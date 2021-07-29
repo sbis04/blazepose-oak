@@ -1475,6 +1475,8 @@ class BlazeposeDepthai:
         max_sample = 0
         pose = 0
 
+        #print(pose_classification_filtered)
+
         for i in pose_classification_filtered.keys():
             if pose_classification_filtered[i] > max_sample:
                 pose = i
@@ -1484,7 +1486,7 @@ class BlazeposeDepthai:
         print(pose)
         
         rounded_accuracy = round(r.lm_score, 2)
-        print(max_sample)
+        print(max_sample/10)
 
         # data = {"pose": pose, "accuracy": rounded_accuracy}
 
