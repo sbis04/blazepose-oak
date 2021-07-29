@@ -1541,19 +1541,19 @@ class BlazeposeDepthai:
 
         ANGLE_BETWEEN_LEGS = get3DAngle(r.landmarks_abs[26,:3],r.landmarks_abs[0,:3],r.landmarks_abs[25,:3])
 
-        print("LEFT_ARM_ANGLE",LEFT_ARM_ANGLE)
-        print("RIGHT_ARM_ANGLE",RIGHT_ARM_ANGLE)
+        # print("LEFT_ARM_ANGLE",LEFT_ARM_ANGLE)
+        # print("RIGHT_ARM_ANGLE",RIGHT_ARM_ANGLE)
 
-        print("LEFT_HAND_HIP_ANGLE",LEFT_HAND_HIP_ANGLE)
-        print("RIGHT_HAND_HIP_ANGLE",RIGHT_HAND_HIP_ANGLE)
+        # print("LEFT_HAND_HIP_ANGLE",LEFT_HAND_HIP_ANGLE)
+        # print("RIGHT_HAND_HIP_ANGLE",RIGHT_HAND_HIP_ANGLE)
 
-        print("LEFT_LEG_ANGLE",LEFT_LEG_ANGLE)
-        print("RIGHT_LEG_ANGLE",RIGHT_LEG_ANGLE)
+        # print("LEFT_LEG_ANGLE",LEFT_LEG_ANGLE)
+        # print("RIGHT_LEG_ANGLE",RIGHT_LEG_ANGLE)
 
-        print("LEFT_HIP_KNEE_ANGLE", LEFT_HIP_KNEE_ANGLE)
-        print("RIGHT_HIP_KNEE_ANGLE", RIGHT_HIP_KNEE_ANGLE)
+        # print("LEFT_HIP_KNEE_ANGLE", LEFT_HIP_KNEE_ANGLE)
+        # print("RIGHT_HIP_KNEE_ANGLE", RIGHT_HIP_KNEE_ANGLE)
 
-        print("ANGLE_BETWEEN_LEGS", ANGLE_BETWEEN_LEGS)
+        # print("ANGLE_BETWEEN_LEGS", ANGLE_BETWEEN_LEGS)
         from collections import OrderedDict
         diff_dict = OrderedDict()
         feedback = ""
@@ -1638,8 +1638,9 @@ class BlazeposeDepthai:
 
         # jointname1 _positive:jointname_name#
 
-        for key in list(diff_dict[:2]):
-            feedback += key+":"+diff_dict[key]+"#"        
+        for key in diff_dict[0:2]:
+            #print(key)
+            feedback += key[0]+":"+str(key[1])+"#"        
         print(feedback)
             
     def run(self):
@@ -1818,7 +1819,7 @@ if __name__ == "__main__":
                         help="Path to video or image file to use as input (default: internal camera")
     parser.add_argument('-g', '--gesture', action="store_true",
                         help="enable gesture recognition")
-    parser.add_argument('-ps', '--pose', action="store_true",
+    parser.add_argument('-ps', '--pose', type=str,
                         help="enable pose recognition")
     parser.add_argument("--pd_m", type=str,
                         help="Path to an .blob file for pose detection model")
