@@ -265,8 +265,8 @@ POSES = {
         "LEFT_LEG_ANGLE" : 90,
         "RIGHT_LEG_ANGLE" : 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 80,
+        "RIGHT_HIP_KNEE_ANGLE" : 80,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -275,46 +275,46 @@ POSES = {
         "LEFT_ARM_ANGLE" : 180,
         "RIGHT_ARM_ANGLE" : 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 180,
+        "RIGHT_HAND_HIP_ANGLE" : 180,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 80,
+        "RIGHT_HIP_KNEE_ANGLE" : 80,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
 
     "easy" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 100,
+        "RIGHT_ARM_ANGLE" : 100,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 20,
+        "RIGHT_HAND_HIP_ANGLE" : 20,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE" : 10,
+        "RIGHT_LEG_ANGLE" : 10,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 90,
+        "RIGHT_HIP_KNEE_ANGLE" : 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 120,
     },
 
     "fish" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 120,
+        "RIGHT_ARM_ANGLE" : 120,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 40,
+        "RIGHT_HAND_HIP_ANGLE" : 40,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 120,
+        "RIGHT_HIP_KNEE_ANGLE" : 120,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -323,14 +323,14 @@ POSES = {
         "LEFT_ARM_ANGLE" : 180,
         "RIGHT_ARM_ANGLE" : 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 120,
+        "RIGHT_HAND_HIP_ANGLE" : 120,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 0,
+        "RIGHT_HIP_KNEE_ANGLE" : 0,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -345,24 +345,24 @@ POSES = {
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 90,
         "RIGHT_HIP_KNEE_ANGLE" : 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 90,
     },
 
     "half_spinal" : {
         "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "RIGHT_ARM_ANGLE" : 80,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 45,
+        "RIGHT_HAND_HIP_ANGLE" : 45,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE" : 45,
+        "RIGHT_LEG_ANGLE" : 45,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 45,
+        "RIGHT_HIP_KNEE_ANGLE" : 90,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -377,8 +377,8 @@ POSES = {
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 90,
+        "RIGHT_HIP_KNEE_ANGLE" : 90,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -387,30 +387,14 @@ POSES = {
         "LEFT_ARM_ANGLE" : 180,
         "RIGHT_ARM_ANGLE" : 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 0,
+        "RIGHT_HAND_HIP_ANGLE" : 0,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
-
-        "ANGLE_BETWEEN_LEGS" : 0,
-    },
-
-    "mountain" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
-
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
-
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
-
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 120,
+        "RIGHT_HIP_KNEE_ANGLE" : 120,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -419,8 +403,8 @@ POSES = {
         "LEFT_ARM_ANGLE" : 180,
         "RIGHT_ARM_ANGLE" : 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 70,
+        "RIGHT_HAND_HIP_ANGLE" : 70,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
@@ -432,65 +416,49 @@ POSES = {
     },
 
     "ragdoll" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 90,
+        "RIGHT_ARM_ANGLE" : 90,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 140,
+        "RIGHT_HAND_HIP_ANGLE" : 140,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 10,
+        "RIGHT_HIP_KNEE_ANGLE" : 10,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
 
     "seated_forward_bend" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 90,
+        "RIGHT_ARM_ANGLE" : 90,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 120,
+        "RIGHT_HAND_HIP_ANGLE" : 120,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 0,
+        "RIGHT_HIP_KNEE_ANGLE" : 0,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
 
     "seated_wide_angle" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 90,
+        "RIGHT_ARM_ANGLE" : 90,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
-
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
-
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
-
-        "ANGLE_BETWEEN_LEGS" : 0,
-    },
-
-    "seated_wide_angle" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
-
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 40,
+        "RIGHT_HAND_HIP_ANGLE" : 40,
 
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 90,
+        "RIGHT_HIP_KNEE_ANGLE" : 90,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
@@ -505,26 +473,26 @@ POSES = {
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 90,
+        "RIGHT_HIP_KNEE_ANGLE" : 90,
 
         "ANGLE_BETWEEN_LEGS" : 0,
     },
 
     "tree" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 45,
+        "RIGHT_ARM_ANGLE" : 45,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE" : 45,
+        "RIGHT_HAND_HIP_ANGLE" : 45,
 
         "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "RIGHT_LEG_ANGLE" : 40,
 
         "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "RIGHT_HIP_KNEE_ANGLE" : 120,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 45,
     },
 
     "triangle1" : {
@@ -537,10 +505,10 @@ POSES = {
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 120,
+        "RIGHT_HIP_KNEE_ANGLE" : 45,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 90,
     },
 
     "triangle2" : {
@@ -553,10 +521,10 @@ POSES = {
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 45,
+        "RIGHT_HIP_KNEE_ANGLE" : 120,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 90,
     },
 
     "warrior" : {
@@ -567,17 +535,17 @@ POSES = {
         "RIGHT_HAND_HIP_ANGLE" : 90,
 
         "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "RIGHT_LEG_ANGLE" : 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 120,
+        "RIGHT_HIP_KNEE_ANGLE" : 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 120,
     },
 
     "wide-legged_forward_bend" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+        "LEFT_ARM_ANGLE" : 90,
+        "RIGHT_ARM_ANGLE" : 90,
 
         "LEFT_HAND_HIP_ANGLE" : 90,
         "RIGHT_HAND_HIP_ANGLE" : 90,
@@ -585,10 +553,10 @@ POSES = {
         "LEFT_LEG_ANGLE" : 180,
         "RIGHT_LEG_ANGLE" : 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE" : 45,
+        "RIGHT_HIP_KNEE_ANGLE" : 45,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS" : 90,
     },
 
 }
