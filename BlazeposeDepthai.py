@@ -1081,7 +1081,8 @@ class BlazeposeDepthai:
                  lm_score_threshold=0.7,
                  full_body=True,
                  use_gesture=False,
-                 use_pose=False,
+                 use_pose="mountain",
+                 track="beginners",
                  get_angles = False,
                  smoothing=True,
                  filter_window_size=5,
@@ -1449,21 +1450,21 @@ class BlazeposeDepthai:
         pose_embedder = FullBodyPoseEmbedder()
 
         if track == "beginners" :
-            pose_folder="./beginners_poses_csvs_out"
+            pose_folder="./pose_csvs/beginners_poses_csvs_out"
         elif track == "asthma":
-            pose_folder="./asthma_poses_csvs_out"
+            pose_folder="./pose_csvs/asthma_poses_csvs_out"
         elif track == "power":
-            pose_folder="./power_poses_csvs_out"
+            pose_folder="./pose_csvs/power_poses_csvs_out"
         elif track == "immunity":
-            pose_folder="./immunity_poses_csvs_out"
+            pose_folder="./pose_csvs/immunity_poses_csvs_out"
         elif track == "insomnia":
-            pose_folder="./insomnia_poses_csvs_out"
+            pose_folder="./pose_csvs/insomnia_poses_csvs_out"
         elif track == "cardiovascular":
-            pose_folder="./cardiovascular_poses_csvs_out"
+            pose_folder="./pose_csvs/cardiovascular_poses_csvs_out"
         elif track == "migraine":
-            pose_folder="./migraine_poses_csvs_out"
+            pose_folder="./pose_csvs/migraine_poses_csvs_out"
         elif track == "pregnancy":
-            pose_folder="./pregnancy_poses_csvs_out"
+            pose_folder="./pose_csvs/pregnancy_poses_csvs_out"
 
         pose_classifier = PoseClassifier(
             pose_samples_folder='./fitness_poses_csvs_out',
@@ -1885,6 +1886,7 @@ if __name__ == "__main__":
                           filter_velocity_scale=args.filter_velocity_scale,
                           use_gesture=args.gesture,
                           use_pose=args.pose,
+                          track=args.track,
                           get_angles = args.angles,
                           show_3d=args.show_3d,
                           crop=args.crop,
