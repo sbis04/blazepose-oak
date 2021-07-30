@@ -1462,6 +1462,8 @@ class BlazeposeDepthai:
             pose_folder="./cardiovascular_poses_csvs_out"
         elif track == "migraine":
             pose_folder="./migraine_poses_csvs_out"
+        elif track == "pregnancy":
+            pose_folder="./pregnancy_poses_csvs_out"
 
         pose_classifier = PoseClassifier(
             pose_samples_folder='./fitness_poses_csvs_out',
