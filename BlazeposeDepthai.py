@@ -558,7 +558,6 @@ POSES = {
 
         "ANGLE_BETWEEN_LEGS" : 90,
     },
-
 }
 
 
@@ -1101,6 +1100,7 @@ class BlazeposeDepthai:
         self.full_body = full_body
         self.use_gesture = use_gesture
         self.use_pose = use_pose
+        self.track = track
         self.get_angles = get_angles
         self.smoothing = smoothing
         self.show_3d = show_3d
@@ -1467,7 +1467,7 @@ class BlazeposeDepthai:
             pose_folder="./pose_csvs/pregnancy_poses_csvs_out"
 
         pose_classifier = PoseClassifier(
-            pose_samples_folder='./fitness_poses_csvs_out',
+            pose_samples_folder=pose_folder,
             pose_embedder=pose_embedder,
             top_n_by_max_distance=30,
             top_n_by_mean_distance=10)
@@ -1501,10 +1501,8 @@ class BlazeposeDepthai:
                 max_sample = pose_classification_filtered[i]
 
         r.pose = pose
-        print(pose)
         
-        rounded_accuracy = round(r.lm_score, 2)
-        print(max_sample/10)
+        accuracy = max_sample/10
 
         # data = {"pose": pose, "accuracy": rounded_accuracy}
 
@@ -1660,8 +1658,11 @@ class BlazeposeDepthai:
 
         for key in diff_dict[0:2]:
             #print(key)
-            feedback += key[0]+":"+str(key[1])+"#"        
-        print(feedback)
+            feedback += key[0]+":"+str(key[1])+"#"  
+        if pose == expected_pose:
+            print(pose)
+            print(accuracy)      
+            print(feedback)
             
     def run(self):
 

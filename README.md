@@ -20,6 +20,10 @@ To use yoga pose classification:
 python3 BlazeposeDepthai.py --pose
 ```
 
+```sh
+python3 BlazeposeDepthai.py --pose mountain --track beginners
+```
+
 ## License
 
 MIT License
