@@ -1367,7 +1367,7 @@ class BlazeposeDepthai:
                 self.recognize_gesture(region)
 
             if self.use_pose:
-                self.recognize_pose(region,expected_pose=self.use_pose)
+                self.recognize_pose(region,expected_pose=self.use_pose,track=self.track)
 
     def lm_render(self, frame, region):
         if region.lm_score > self.lm_score_threshold:
@@ -1440,13 +1440,28 @@ class BlazeposeDepthai:
         left_pose = int((left_arm_angle + 202.5) / 45)
         r.gesture = semaphore_flag.get((right_pose, left_pose), None)
 
-    def recognize_pose(self, r, expected_pose):
+    def recognize_pose(self, r, expected_pose, track):
 
         r.pose = "Pose not detected"
 
         #################################################################################
 
         pose_embedder = FullBodyPoseEmbedder()
+
+        if track == "beginners" :
+            pose_folder="./beginners_poses_csvs_out"
+        elif track == "asthma":
+            pose_folder="./asthma_poses_csvs_out"
+        elif track == "power":
+            pose_folder="./power_poses_csvs_out"
+        elif track == "immunity":
+            pose_folder="./immunity_poses_csvs_out"
+        elif track == "insomnia":
+            pose_folder="./insomnia_poses_csvs_out"
+        elif track == "cardiovascular":
+            pose_folder="./cardiovascular_poses_csvs_out"
+        elif track == "migraine":
+            pose_folder="./migraine_poses_csvs_out"
 
         pose_classifier = PoseClassifier(
             pose_samples_folder='./fitness_poses_csvs_out',
@@ -1823,6 +1838,8 @@ if __name__ == "__main__":
                         help="enable gesture recognition")
     parser.add_argument('-ps', '--pose', type=str,
                         help="enable pose recognition")
+    parser.add_argument('-tr', '--track', type=str,
+                        help="select specific track")
     parser.add_argument("--pd_m", type=str,
                         help="Path to an .blob file for pose detection model")
     parser.add_argument("--lm_m", type=str,
