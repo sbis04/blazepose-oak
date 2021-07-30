@@ -80,483 +80,483 @@ FULL_BODY_LANDMARK_MODEL = SCRIPT_DIR / "models/pose_landmark_full_body.blob"
 UPPER_BODY_LANDMARK_MODEL = SCRIPT_DIR / "models/pose_landmark_upper_body.blob"
 
 POSES = {
-    "mountain" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "mountain": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
-    "tree" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "tree": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 180,
-        "RIGHT_HAND_HIP_ANGLE" : 180,
+        "LEFT_HAND_HIP_ANGLE": 180,
+        "RIGHT_HAND_HIP_ANGLE": 180,
 
-        "LEFT_LEG_ANGLE" : 135,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 135,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 0,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 0,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
-    },
-
-    "boat" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
-
-        "LEFT_HAND_HIP_ANGLE" : 45,
-        "RIGHT_HAND_HIP_ANGLE" : 45,
-
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
-
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
-
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "bridge" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "boat": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 45,
-        "RIGHT_HAND_HIP_ANGLE" : 45,
+        "LEFT_HAND_HIP_ANGLE": 45,
+        "RIGHT_HAND_HIP_ANGLE": 45,
 
-        "LEFT_LEG_ANGLE" : 90,
-        "RIGHT_LEG_ANGLE" : 90,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "butterfly" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "bridge": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 0,
-        "RIGHT_HAND_HIP_ANGLE" : 0,
+        "LEFT_HAND_HIP_ANGLE": 45,
+        "RIGHT_HAND_HIP_ANGLE": 45,
 
-        "LEFT_LEG_ANGLE" : 20,
-        "RIGHT_LEG_ANGLE" : 20,
+        "LEFT_LEG_ANGLE": 90,
+        "RIGHT_LEG_ANGLE": 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 180,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "camel" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "butterfly": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 0,
+        "RIGHT_HAND_HIP_ANGLE": 0,
 
-        "LEFT_LEG_ANGLE" : 90,
-        "RIGHT_LEG_ANGLE" : 90,
+        "LEFT_LEG_ANGLE": 20,
+        "RIGHT_LEG_ANGLE": 20,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 180,
     },
 
-    "cat_cow" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "camel": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 90,
-        "RIGHT_LEG_ANGLE" : 90,
+        "LEFT_LEG_ANGLE": 90,
+        "RIGHT_LEG_ANGLE": 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "chair" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "cat_cow": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 180,
-        "RIGHT_HAND_HIP_ANGLE" : 180,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 100,
-        "RIGHT_LEG_ANGLE" : 100,
+        "LEFT_LEG_ANGLE": 90,
+        "RIGHT_LEG_ANGLE": 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 80,
-        "RIGHT_HIP_KNEE_ANGLE" : 80,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "child" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "chair": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 170,
-        "RIGHT_HAND_HIP_ANGLE" : 170,
+        "LEFT_HAND_HIP_ANGLE": 180,
+        "RIGHT_HAND_HIP_ANGLE": 180,
 
-        "LEFT_LEG_ANGLE" : 10,
-        "RIGHT_LEG_ANGLE" : 10,
+        "LEFT_LEG_ANGLE": 100,
+        "RIGHT_LEG_ANGLE": 100,
 
-        "LEFT_HIP_KNEE_ANGLE" : 10,
-        "RIGHT_HIP_KNEE_ANGLE" : 10,
+        "LEFT_HIP_KNEE_ANGLE": 80,
+        "RIGHT_HIP_KNEE_ANGLE": 80,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "cobra" : {
-        "LEFT_ARM_ANGLE" : 120,
-        "RIGHT_ARM_ANGLE" : 120,
+    "child": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 40,
-        "RIGHT_HAND_HIP_ANGLE" : 40,
+        "LEFT_HAND_HIP_ANGLE": 170,
+        "RIGHT_HAND_HIP_ANGLE": 170,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 10,
+        "RIGHT_LEG_ANGLE": 10,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 10,
+        "RIGHT_HIP_KNEE_ANGLE": 10,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "corpse" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "cobra": {
+        "LEFT_ARM_ANGLE": 120,
+        "RIGHT_ARM_ANGLE": 120,
 
-        "LEFT_HAND_HIP_ANGLE" : 40,
-        "RIGHT_HAND_HIP_ANGLE" : 40,
+        "LEFT_HAND_HIP_ANGLE": 40,
+        "RIGHT_HAND_HIP_ANGLE": 40,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "cow_face" : {
-        "LEFT_ARM_ANGLE" : 10,
-        "RIGHT_ARM_ANGLE" : 10,
+    "corpse": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 180,
-        "RIGHT_HAND_HIP_ANGLE" : 180,
+        "LEFT_HAND_HIP_ANGLE": 40,
+        "RIGHT_HAND_HIP_ANGLE": 40,
 
-        "LEFT_LEG_ANGLE" : 90,
-        "RIGHT_LEG_ANGLE" : 90,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 80,
-        "RIGHT_HIP_KNEE_ANGLE" : 80,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "downward_facing_dog" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "cow_face": {
+        "LEFT_ARM_ANGLE": 10,
+        "RIGHT_ARM_ANGLE": 10,
 
-        "LEFT_HAND_HIP_ANGLE" : 180,
-        "RIGHT_HAND_HIP_ANGLE" : 180,
+        "LEFT_HAND_HIP_ANGLE": 180,
+        "RIGHT_HAND_HIP_ANGLE": 180,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 90,
+        "RIGHT_LEG_ANGLE": 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 80,
-        "RIGHT_HIP_KNEE_ANGLE" : 80,
+        "LEFT_HIP_KNEE_ANGLE": 80,
+        "RIGHT_HIP_KNEE_ANGLE": 80,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "easy" : {
-        "LEFT_ARM_ANGLE" : 100,
-        "RIGHT_ARM_ANGLE" : 100,
+    "downward_facing_dog": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 20,
-        "RIGHT_HAND_HIP_ANGLE" : 20,
+        "LEFT_HAND_HIP_ANGLE": 180,
+        "RIGHT_HAND_HIP_ANGLE": 180,
 
-        "LEFT_LEG_ANGLE" : 10,
-        "RIGHT_LEG_ANGLE" : 10,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 80,
+        "RIGHT_HIP_KNEE_ANGLE": 80,
 
-        "ANGLE_BETWEEN_LEGS" : 120,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "fish" : {
-        "LEFT_ARM_ANGLE" : 120,
-        "RIGHT_ARM_ANGLE" : 120,
+    "easy": {
+        "LEFT_ARM_ANGLE": 100,
+        "RIGHT_ARM_ANGLE": 100,
 
-        "LEFT_HAND_HIP_ANGLE" : 40,
-        "RIGHT_HAND_HIP_ANGLE" : 40,
+        "LEFT_HAND_HIP_ANGLE": 20,
+        "RIGHT_HAND_HIP_ANGLE": 20,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 10,
+        "RIGHT_LEG_ANGLE": 10,
 
-        "LEFT_HIP_KNEE_ANGLE" : 120,
-        "RIGHT_HIP_KNEE_ANGLE" : 120,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 120,
     },
 
-    "forward_bend" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "fish": {
+        "LEFT_ARM_ANGLE": 120,
+        "RIGHT_ARM_ANGLE": 120,
 
-        "LEFT_HAND_HIP_ANGLE" : 120,
-        "RIGHT_HAND_HIP_ANGLE" : 120,
+        "LEFT_HAND_HIP_ANGLE": 40,
+        "RIGHT_HAND_HIP_ANGLE": 40,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 0,
-        "RIGHT_HIP_KNEE_ANGLE" : 0,
+        "LEFT_HIP_KNEE_ANGLE": 120,
+        "RIGHT_HIP_KNEE_ANGLE": 120,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "half_moon" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "forward_bend": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 120,
+        "RIGHT_HAND_HIP_ANGLE": 120,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 0,
+        "RIGHT_HIP_KNEE_ANGLE": 0,
 
-        "ANGLE_BETWEEN_LEGS" : 90,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "half_spinal" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 80,
+    "half_moon": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 45,
-        "RIGHT_HAND_HIP_ANGLE" : 45,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 45,
-        "RIGHT_LEG_ANGLE" : 45,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 45,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 90,
     },
 
-    "legs_up_the_wall" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "half_spinal": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 80,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 45,
+        "RIGHT_HAND_HIP_ANGLE": 45,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 45,
+        "RIGHT_LEG_ANGLE": 45,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 45,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "locust" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "legs_up_the_wall": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 0,
-        "RIGHT_HAND_HIP_ANGLE" : 0,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 120,
-        "RIGHT_HIP_KNEE_ANGLE" : 120,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "plank" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "locust": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 70,
-        "RIGHT_HAND_HIP_ANGLE" : 70,
+        "LEFT_HAND_HIP_ANGLE": 0,
+        "RIGHT_HAND_HIP_ANGLE": 0,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 180,
+        "LEFT_HIP_KNEE_ANGLE": 120,
+        "RIGHT_HIP_KNEE_ANGLE": 120,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "ragdoll" : {
-        "LEFT_ARM_ANGLE" : 90,
-        "RIGHT_ARM_ANGLE" : 90,
+    "plank": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 140,
-        "RIGHT_HAND_HIP_ANGLE" : 140,
+        "LEFT_HAND_HIP_ANGLE": 70,
+        "RIGHT_HAND_HIP_ANGLE": 70,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 10,
-        "RIGHT_HIP_KNEE_ANGLE" : 10,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 180,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "seated_forward_bend" : {
-        "LEFT_ARM_ANGLE" : 90,
-        "RIGHT_ARM_ANGLE" : 90,
+    "ragdoll": {
+        "LEFT_ARM_ANGLE": 90,
+        "RIGHT_ARM_ANGLE": 90,
 
-        "LEFT_HAND_HIP_ANGLE" : 120,
-        "RIGHT_HAND_HIP_ANGLE" : 120,
+        "LEFT_HAND_HIP_ANGLE": 140,
+        "RIGHT_HAND_HIP_ANGLE": 140,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 0,
-        "RIGHT_HIP_KNEE_ANGLE" : 0,
+        "LEFT_HIP_KNEE_ANGLE": 10,
+        "RIGHT_HIP_KNEE_ANGLE": 10,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "seated_wide_angle" : {
-        "LEFT_ARM_ANGLE" : 90,
-        "RIGHT_ARM_ANGLE" : 90,
+    "seated_forward_bend": {
+        "LEFT_ARM_ANGLE": 90,
+        "RIGHT_ARM_ANGLE": 90,
 
-        "LEFT_HAND_HIP_ANGLE" : 40,
-        "RIGHT_HAND_HIP_ANGLE" : 40,
+        "LEFT_HAND_HIP_ANGLE": 120,
+        "RIGHT_HAND_HIP_ANGLE": 120,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 0,
+        "RIGHT_HIP_KNEE_ANGLE": 0,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "staff" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "seated_wide_angle": {
+        "LEFT_ARM_ANGLE": 90,
+        "RIGHT_ARM_ANGLE": 90,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 40,
+        "RIGHT_HAND_HIP_ANGLE": 40,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 90,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 0,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "tree" : {
-        "LEFT_ARM_ANGLE" : 45,
-        "RIGHT_ARM_ANGLE" : 45,
+    "staff": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 45,
-        "RIGHT_HAND_HIP_ANGLE" : 45,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 40,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 180,
-        "RIGHT_HIP_KNEE_ANGLE" : 120,
+        "LEFT_HIP_KNEE_ANGLE": 90,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 45,
+        "ANGLE_BETWEEN_LEGS": 0,
     },
 
-    "triangle1" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "tree": {
+        "LEFT_ARM_ANGLE": 45,
+        "RIGHT_ARM_ANGLE": 45,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 45,
+        "RIGHT_HAND_HIP_ANGLE": 45,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 40,
 
-        "LEFT_HIP_KNEE_ANGLE" : 120,
-        "RIGHT_HIP_KNEE_ANGLE" : 45,
+        "LEFT_HIP_KNEE_ANGLE": 180,
+        "RIGHT_HIP_KNEE_ANGLE": 120,
 
-        "ANGLE_BETWEEN_LEGS" : 90,
+        "ANGLE_BETWEEN_LEGS": 45,
     },
 
-    "triangle2" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "triangle1": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 45,
-        "RIGHT_HIP_KNEE_ANGLE" : 120,
+        "LEFT_HIP_KNEE_ANGLE": 120,
+        "RIGHT_HIP_KNEE_ANGLE": 45,
 
-        "ANGLE_BETWEEN_LEGS" : 90,
+        "ANGLE_BETWEEN_LEGS": 90,
     },
 
-    "warrior" : {
-        "LEFT_ARM_ANGLE" : 180,
-        "RIGHT_ARM_ANGLE" : 180,
+    "triangle2": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 90,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
 
-        "LEFT_HIP_KNEE_ANGLE" : 120,
-        "RIGHT_HIP_KNEE_ANGLE" : 90,
+        "LEFT_HIP_KNEE_ANGLE": 45,
+        "RIGHT_HIP_KNEE_ANGLE": 120,
 
-        "ANGLE_BETWEEN_LEGS" : 120,
+        "ANGLE_BETWEEN_LEGS": 90,
     },
 
-    "wide-legged_forward_bend" : {
-        "LEFT_ARM_ANGLE" : 90,
-        "RIGHT_ARM_ANGLE" : 90,
+    "warrior": {
+        "LEFT_ARM_ANGLE": 180,
+        "RIGHT_ARM_ANGLE": 180,
 
-        "LEFT_HAND_HIP_ANGLE" : 90,
-        "RIGHT_HAND_HIP_ANGLE" : 90,
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
 
-        "LEFT_LEG_ANGLE" : 180,
-        "RIGHT_LEG_ANGLE" : 180,
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 90,
 
-        "LEFT_HIP_KNEE_ANGLE" : 45,
-        "RIGHT_HIP_KNEE_ANGLE" : 45,
+        "LEFT_HIP_KNEE_ANGLE": 120,
+        "RIGHT_HIP_KNEE_ANGLE": 90,
 
-        "ANGLE_BETWEEN_LEGS" : 90,
+        "ANGLE_BETWEEN_LEGS": 120,
+    },
+
+    "wide-legged_forward_bend": {
+        "LEFT_ARM_ANGLE": 90,
+        "RIGHT_ARM_ANGLE": 90,
+
+        "LEFT_HAND_HIP_ANGLE": 90,
+        "RIGHT_HAND_HIP_ANGLE": 90,
+
+        "LEFT_LEG_ANGLE": 180,
+        "RIGHT_LEG_ANGLE": 180,
+
+        "LEFT_HIP_KNEE_ANGLE": 45,
+        "RIGHT_HIP_KNEE_ANGLE": 45,
+
+        "ANGLE_BETWEEN_LEGS": 90,
     },
 }
 
@@ -985,7 +985,7 @@ class PoseClassifier(object):
         #
         # After removing outliers we can find the nearest pose by mean distance.
 
-        ## HERE2
+        # HERE2
         mean_dist_heap = []
         for _, sample_idx in max_dist_heap:
             sample = self._pose_samples[sample_idx]
@@ -1082,7 +1082,7 @@ class BlazeposeDepthai:
                  use_gesture=False,
                  use_pose="mountain",
                  track="beginners",
-                 get_angles = False,
+                 get_angles=False,
                  smoothing=True,
                  filter_window_size=5,
                  filter_velocity_scale=10,
@@ -1368,7 +1368,8 @@ class BlazeposeDepthai:
                 self.recognize_gesture(region)
 
             if self.use_pose:
-                self.recognize_pose(region,expected_pose=self.use_pose,track=self.track)
+                self.recognize_pose(
+                    region, expected_pose=self.use_pose, track=self.track)
 
     def lm_render(self, frame, region):
         if region.lm_score > self.lm_score_threshold:
@@ -1449,22 +1450,22 @@ class BlazeposeDepthai:
 
         pose_embedder = FullBodyPoseEmbedder()
 
-        if track == "beginners" :
-            pose_folder="./pose_csvs/beginners_poses_csvs_out"
+        if track == "beginners":
+            pose_folder = "./pose_csvs/beginners_poses_csvs_out"
         elif track == "asthma":
-            pose_folder="./pose_csvs/asthma_poses_csvs_out"
+            pose_folder = "./pose_csvs/asthma_poses_csvs_out"
         elif track == "power":
-            pose_folder="./pose_csvs/power_poses_csvs_out"
+            pose_folder = "./pose_csvs/power_poses_csvs_out"
         elif track == "immunity":
-            pose_folder="./pose_csvs/immunity_poses_csvs_out"
+            pose_folder = "./pose_csvs/immunity_poses_csvs_out"
         elif track == "insomnia":
-            pose_folder="./pose_csvs/insomnia_poses_csvs_out"
+            pose_folder = "./pose_csvs/insomnia_poses_csvs_out"
         elif track == "cardiovascular":
-            pose_folder="./pose_csvs/cardiovascular_poses_csvs_out"
+            pose_folder = "./pose_csvs/cardiovascular_poses_csvs_out"
         elif track == "migraine":
-            pose_folder="./pose_csvs/migraine_poses_csvs_out"
+            pose_folder = "./pose_csvs/migraine_poses_csvs_out"
         elif track == "pregnancy":
-            pose_folder="./pose_csvs/pregnancy_poses_csvs_out"
+            pose_folder = "./pose_csvs/pregnancy_poses_csvs_out"
 
         pose_classifier = PoseClassifier(
             pose_samples_folder=pose_folder,
@@ -1493,7 +1494,7 @@ class BlazeposeDepthai:
         max_sample = 0
         pose = 0
 
-        #print(pose_classification_filtered)
+        # print(pose_classification_filtered)
 
         for i in pose_classification_filtered.keys():
             if pose_classification_filtered[i] > max_sample:
@@ -1501,7 +1502,7 @@ class BlazeposeDepthai:
                 max_sample = pose_classification_filtered[i]
 
         r.pose = pose
-        
+
         accuracy = max_sample/10
 
         # data = {"pose": pose, "accuracy": rounded_accuracy}
@@ -1519,7 +1520,7 @@ class BlazeposeDepthai:
         #     if (result > 180) :
         #         result = 360.0 - result # Always get the acute representation of the angle
 
-        #         result = 360.0 - result # Always get the acute representation of the angle        
+        #         result = 360.0 - result # Always get the acute representation of the angle
         #     return result
         # print(r.landmarks_abs[14,:2])
         # print(r.landmarks_abs[14])
@@ -1541,23 +1542,33 @@ class BlazeposeDepthai:
             ba = a - b
             bc = c - b
 
-            cosine_angle = np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc))
+            cosine_angle = np.dot(ba, bc) / \
+                (np.linalg.norm(ba) * np.linalg.norm(bc))
             angle = np.arccos(cosine_angle)
             return np.degrees(angle)
 
-        LEFT_ARM_ANGLE = get3DAngle(r.landmarks_abs[12,:3],r.landmarks_abs[14,:3],r.landmarks_abs[16,:3])
-        RIGHT_ARM_ANGLE = get3DAngle(r.landmarks_abs[11,:3],r.landmarks_abs[13,:3],r.landmarks_abs[15,:3])
+        LEFT_ARM_ANGLE = get3DAngle(
+            r.landmarks_abs[12, :3], r.landmarks_abs[14, :3], r.landmarks_abs[16, :3])
+        RIGHT_ARM_ANGLE = get3DAngle(
+            r.landmarks_abs[11, :3], r.landmarks_abs[13, :3], r.landmarks_abs[15, :3])
 
-        LEFT_HAND_HIP_ANGLE = get3DAngle(r.landmarks_abs[14,:3],r.landmarks_abs[12,:3],r.landmarks_abs[24,:3])
-        RIGHT_HAND_HIP_ANGLE = get3DAngle(r.landmarks_abs[13,:3],r.landmarks_abs[21,:3],r.landmarks_abs[23,:3])
+        LEFT_HAND_HIP_ANGLE = get3DAngle(
+            r.landmarks_abs[14, :3], r.landmarks_abs[12, :3], r.landmarks_abs[24, :3])
+        RIGHT_HAND_HIP_ANGLE = get3DAngle(
+            r.landmarks_abs[13, :3], r.landmarks_abs[21, :3], r.landmarks_abs[23, :3])
 
-        LEFT_LEG_ANGLE = get3DAngle(r.landmarks_abs[24,:3],r.landmarks_abs[26,:3],r.landmarks_abs[28,:3])
-        RIGHT_LEG_ANGLE = get3DAngle(r.landmarks_abs[23,:3],r.landmarks_abs[25,:3],r.landmarks_abs[27,:3])
+        LEFT_LEG_ANGLE = get3DAngle(
+            r.landmarks_abs[24, :3], r.landmarks_abs[26, :3], r.landmarks_abs[28, :3])
+        RIGHT_LEG_ANGLE = get3DAngle(
+            r.landmarks_abs[23, :3], r.landmarks_abs[25, :3], r.landmarks_abs[27, :3])
 
-        LEFT_HIP_KNEE_ANGLE = get3DAngle(r.landmarks_abs[12,:3],r.landmarks_abs[24,:3],r.landmarks_abs[26,:3])
-        RIGHT_HIP_KNEE_ANGLE = get3DAngle(r.landmarks_abs[11,:3],r.landmarks_abs[23,:3],r.landmarks_abs[25,:3])
+        LEFT_HIP_KNEE_ANGLE = get3DAngle(
+            r.landmarks_abs[12, :3], r.landmarks_abs[24, :3], r.landmarks_abs[26, :3])
+        RIGHT_HIP_KNEE_ANGLE = get3DAngle(
+            r.landmarks_abs[11, :3], r.landmarks_abs[23, :3], r.landmarks_abs[25, :3])
 
-        ANGLE_BETWEEN_LEGS = get3DAngle(r.landmarks_abs[26,:3],r.landmarks_abs[0,:3],r.landmarks_abs[25,:3])
+        ANGLE_BETWEEN_LEGS = get3DAngle(
+            r.landmarks_abs[26, :3], r.landmarks_abs[0, :3], r.landmarks_abs[25, :3])
 
         # print("LEFT_ARM_ANGLE",LEFT_ARM_ANGLE)
         # print("RIGHT_ARM_ANGLE",RIGHT_ARM_ANGLE)
@@ -1641,17 +1652,26 @@ class BlazeposeDepthai:
             pose_angles = POSES["warrior"]
         elif expected_pose == "wide-legged_forward_bend":
             pose_angles = POSES["wide-legged_forward_bend"]
-        
-        diff_dict["LEFT_ARM_ANGLE"] = pose_angles["LEFT_ARM_ANGLE"]-LEFT_ARM_ANGLE
-        diff_dict["RIGHT_ARM_ANGLE"] = pose_angles["RIGHT_ARM_ANGLE"]-RIGHT_ARM_ANGLE
-        diff_dict["LEFT_HAND_HIP_ANGLE"] = pose_angles["LEFT_HAND_HIP_ANGLE"]-LEFT_HAND_HIP_ANGLE
-        diff_dict["RIGHT_HAND_HIP_ANGLE"] = pose_angles["RIGHT_HAND_HIP_ANGLE"]-RIGHT_HAND_HIP_ANGLE
-        diff_dict["RIGHT_LEG_ANGLE"] = pose_angles["RIGHT_LEG_ANGLE"]-RIGHT_LEG_ANGLE
-        diff_dict["LEFT_HIP_KNEE_ANGLE"] = pose_angles["LEFT_HIP_KNEE_ANGLE"]-LEFT_HIP_KNEE_ANGLE
-        diff_dict["RIGHT_HIP_KNEE_ANGLE"] = pose_angles["LEFT_HIP_KNEE_ANGLE"]-RIGHT_HIP_KNEE_ANGLE
-        diff_dict["ANGLE_BETWEEN_LEGS"] = pose_angles["ANGLE_BETWEEN_LEGS"]-ANGLE_BETWEEN_LEGS
 
-        diff_dict = sorted(diff_dict.items(), key=lambda item: abs(item[1]), reverse=True)
+        diff_dict["LEFT_ARM_ANGLE"] = pose_angles["LEFT_ARM_ANGLE"] - \
+            LEFT_ARM_ANGLE
+        diff_dict["RIGHT_ARM_ANGLE"] = pose_angles["RIGHT_ARM_ANGLE"] - \
+            RIGHT_ARM_ANGLE
+        diff_dict["LEFT_HAND_HIP_ANGLE"] = pose_angles["LEFT_HAND_HIP_ANGLE"] - \
+            LEFT_HAND_HIP_ANGLE
+        diff_dict["RIGHT_HAND_HIP_ANGLE"] = pose_angles["RIGHT_HAND_HIP_ANGLE"] - \
+            RIGHT_HAND_HIP_ANGLE
+        diff_dict["RIGHT_LEG_ANGLE"] = pose_angles["RIGHT_LEG_ANGLE"] - \
+            RIGHT_LEG_ANGLE
+        diff_dict["LEFT_HIP_KNEE_ANGLE"] = pose_angles["LEFT_HIP_KNEE_ANGLE"] - \
+            LEFT_HIP_KNEE_ANGLE
+        diff_dict["RIGHT_HIP_KNEE_ANGLE"] = pose_angles["LEFT_HIP_KNEE_ANGLE"] - \
+            RIGHT_HIP_KNEE_ANGLE
+        diff_dict["ANGLE_BETWEEN_LEGS"] = pose_angles["ANGLE_BETWEEN_LEGS"] - \
+            ANGLE_BETWEEN_LEGS
+
+        diff_dict = sorted(diff_dict.items(),
+                           key=lambda item: abs(item[1]), reverse=True)
         # print(diff_dict)
 
         new_accuracy = 0
@@ -1662,7 +1682,7 @@ class BlazeposeDepthai:
             feedback += key[0]+":"+str(key[1])+"#"
 
         if pose == expected_pose:
-            for key in diff_dict :
+            for key in diff_dict:
                 calculated_accuracy = 1 - (abs(key[1]) / 180)
                 new_accuracy += calculated_accuracy
 
@@ -1673,13 +1693,13 @@ class BlazeposeDepthai:
             # less weightage to angles
             new_accuracy = accuracy * 0.7 + new_accuracy * 0.3
 
-            print("----------------------")  
+            print("----------------------")
             print(f'POSE: {pose}')
             print(f'ACCURACY: {accuracy}')
             print(f'NEW: {new_accuracy}')
             print(f'FEEDBACK: {feedback}')
             print("----------------------\n")
-            
+
     def run(self):
 
         device = dai.Device(self.create_pipeline())
@@ -1882,7 +1902,7 @@ if __name__ == "__main__":
                         help="Force multiple person detection (at your own risk)")
     parser.add_argument('--internal_fps', type=int, default=15,
                         help="Fps of internal color camera. Too high value lower NN fps (default=%(default)i)")
-    parser.add_argument('--angles','--a', type=str, 
+    parser.add_argument('--angles', '--a', type=str,
                         help="Get body angles")
 
     args = parser.parse_args()
@@ -1904,7 +1924,7 @@ if __name__ == "__main__":
                           use_gesture=args.gesture,
                           use_pose=args.pose,
                           track=args.track,
-                          get_angles = args.angles,
+                          get_angles=args.angles,
                           show_3d=args.show_3d,
                           crop=args.crop,
                           multi_detection=args.multi_detection,
