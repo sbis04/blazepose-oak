@@ -1000,10 +1000,10 @@ class PoseClassifier(object):
         mean_dist_heap = sorted(mean_dist_heap, key=lambda x: x[0])
         mean_dist_heap = mean_dist_heap[:self._top_n_by_mean_distance]
 
-        print(mean_dist_heap[0])
-        print(mean_dist_heap)
-        for _, k in mean_dist_heap:
-            print(self._pose_samples[k].class_name)
+        # print(mean_dist_heap[0])
+        # print(mean_dist_heap)
+        # for _, k in mean_dist_heap:
+        #     print(self._pose_samples[k].class_name)
 
         # Collect results into map: (class_name -> n_samples)
         class_names = [
@@ -1651,18 +1651,34 @@ class BlazeposeDepthai:
         diff_dict["RIGHT_HIP_KNEE_ANGLE"] = pose_angles["LEFT_HIP_KNEE_ANGLE"]-RIGHT_HIP_KNEE_ANGLE
         diff_dict["ANGLE_BETWEEN_LEGS"] = pose_angles["ANGLE_BETWEEN_LEGS"]-ANGLE_BETWEEN_LEGS
 
-        diff_dict = sorted(diff_dict.items(), key=lambda item: abs(item[1]))
-        #print(diff_dict)
+        diff_dict = sorted(diff_dict.items(), key=lambda item: abs(item[1]), reverse=True)
+        # print(diff_dict)
+
+        new_accuracy = 0
+        accuracy_threshold = 180
 
         # jointname1 _positive:jointname_name#
-
         for key in diff_dict[0:2]:
-            #print(key)
-            feedback += key[0]+":"+str(key[1])+"#"  
+            feedback += key[0]+":"+str(key[1])+"#"
+
         if pose == expected_pose:
-            print(pose)
-            print(accuracy)      
-            print(feedback)
+            for key in diff_dict :
+                calculated_accuracy = 1 - (abs(key[1]) / 180)
+                new_accuracy += calculated_accuracy
+
+            new_accuracy /= len(diff_dict)
+
+            # calculating weighted average
+            # giving more weightage to classes
+            # less weightage to angles
+            new_accuracy = accuracy * 0.7 + new_accuracy * 0.3
+
+            print("----------------------")  
+            print(f'POSE: {pose}')
+            print(f'ACCURACY: {accuracy}')
+            print(f'NEW: {new_accuracy}')
+            print(f'FEEDBACK: {feedback}')
+            print("----------------------\n")
             
     def run(self):
 
