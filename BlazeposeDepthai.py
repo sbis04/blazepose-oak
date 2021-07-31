@@ -2,6 +2,7 @@
 @author: geaxgx, Soumi7, sbis04
 '''
 
+import time
 import argparse
 import csv
 import os
@@ -17,6 +18,9 @@ import subprocess as sp
 import mediapipe_utils as mpu
 from FPS import FPS, now
 from o3d_utils import create_segment, create_grid
+
+iter_count = 0
+start_time = time.time()
 
 '''
 The following part is for using the RTMP.
@@ -1675,6 +1679,14 @@ class BlazeposeDepthai:
                            key=lambda item: abs(item[1]), reverse=True)
         # print(diff_dict)
 
+        global iter_count
+
+        iter_count += 1
+
+        cur_time = round(time.time() - start_time, 2)
+
+        print(f'{cur_time} seconds --> {iter_count}')
+
         new_accuracy = 0
         accuracy_threshold = 180
 
@@ -1688,6 +1700,8 @@ class BlazeposeDepthai:
             feedback += f'\'{key[0]}\':{value:.2f},'
         
         feedback = feedback[:-1] + "}"
+
+        
              
 
         if pose == expected_pose:
@@ -1707,7 +1721,7 @@ class BlazeposeDepthai:
             #     pose = "triangle"
 
             data = {"pose": pose, "accuracy": rounded_accuracy, "feedback": feedback}
-            print(f"RECOGNIZED: {data}")
+            # print(f"RECOGNIZED: {data}")
 
             # print("----------------------")
             # print(f'POSE: {pose}')
@@ -1839,9 +1853,7 @@ class BlazeposeDepthai:
                                                   h, self.pad_w:self.pad_w + w]
 
             if self.show_fps:
-                self.fps.display(annotated_frame, orig=(
-                    50, 50), size=1, color=(240, 180, 100))
-                print(self.fps*60)
+                self.fps.display(annotated_frame, orig=(50, 50), size=1, color=(240, 180, 100))
 
             # For displaying the camera view on this system
             # cv2.imshow("Blazepose", annotated_frame)
