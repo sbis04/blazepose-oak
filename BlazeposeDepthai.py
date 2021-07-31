@@ -1716,6 +1716,8 @@ class BlazeposeDepthai:
             # print(f'FEEDBACK: {feedback}')
             # print("----------------------\n")
 
+
+
     def run(self):
 
         device = dai.Device(self.create_pipeline())
@@ -1839,6 +1841,7 @@ class BlazeposeDepthai:
             if self.show_fps:
                 self.fps.display(annotated_frame, orig=(
                     50, 50), size=1, color=(240, 180, 100))
+                print(self.fps*60)
 
             # For displaying the camera view on this system
             # cv2.imshow("Blazepose", annotated_frame)
