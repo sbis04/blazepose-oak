@@ -1193,7 +1193,7 @@ class BlazeposeDepthai:
                 output, fourcc, self.video_fps, (video_width, video_height))
 
     def create_pipeline(self):
-        print("Creating pipeline...")
+        print("INFO: Creating pipeline...")
         # Start defining a pipeline
         pipeline = dai.Pipeline()
         pipeline.setOpenVINOVersion(
@@ -1202,7 +1202,7 @@ class BlazeposeDepthai:
 
         if self.input_type == "internal":
             # ColorCamera
-            print("Creating Color Camera...")
+            print("INFO: Initializing Camera...")
             cam = pipeline.createColorCamera()
             cam.setPreviewSize(self.pd_input_length, self.pd_input_length)
             cam.setResolution(
@@ -1223,7 +1223,7 @@ class BlazeposeDepthai:
             #     "rtmps://global-live.mux.com:443/app/6299b472-c3a5-a473-2f48-4078a1718b29", format='mp4').run()
 
         # Define pose detection model
-        print("Creating Pose Detection Neural Network...")
+        print("INFO: Creating Pose Detection Neural Network...")
         pd_nn = pipeline.createNeuralNetwork()
         pd_nn.setBlobPath(str(Path(self.pd_path).resolve().absolute()))
         # Increase threads for detection
@@ -1244,7 +1244,7 @@ class BlazeposeDepthai:
         pd_nn.out.link(pd_out.input)
 
         # Define landmark model
-        print("Creating Landmark Neural Network...")
+        print("INFO: Creating Landmark Neural Network...")
         lm_nn = pipeline.createNeuralNetwork()
         lm_nn.setBlobPath(str(Path(self.lm_path).resolve().absolute()))
         lm_nn.setNumInferenceThreads(1)
@@ -1258,7 +1258,8 @@ class BlazeposeDepthai:
         lm_out.setStreamName("lm_out")
         lm_nn.out.link(lm_out.input)
 
-        print("Pipeline created.")
+        print("INFO: Pipeline created")
+        print("INFO: Ready")
         return pipeline
 
     def pd_postprocess(self, inference):
@@ -1677,13 +1678,21 @@ class BlazeposeDepthai:
         new_accuracy = 0
         accuracy_threshold = 180
 
+        feedback = "{"
+
         # jointname1 _positive:jointname_name#
         for key in diff_dict[0:2]:
-            feedback += key[0]+":"+str(key[1])+"#"
+            # feedback += key[0]+":"+str(key[1])+"#"
+            # feedback += "\'" + key[0] + "\':" + key[1] + ","
+            value = key[1]
+            feedback += f'\'{key[0]}\':{value:.2f},'
+        
+        feedback = feedback[:-1] + "}"
+             
 
         if pose == expected_pose:
             for key in diff_dict:
-                calculated_accuracy = 1 - (abs(key[1]) / 180)
+                calculated_accuracy = 1 - (abs(key[1]) / accuracy_threshold)
                 new_accuracy += calculated_accuracy
 
             new_accuracy /= len(diff_dict)
@@ -1691,14 +1700,21 @@ class BlazeposeDepthai:
             # calculating weighted average
             # giving more weightage to classes
             # less weightage to angles
-            new_accuracy = accuracy * 0.7 + new_accuracy * 0.3
+            weighted_accuracy = accuracy * 0.6 + new_accuracy * 0.4
+            rounded_accuracy = round(weighted_accuracy, 2)
 
-            print("----------------------")
-            print(f'POSE: {pose}')
-            print(f'ACCURACY: {accuracy}')
-            print(f'NEW: {new_accuracy}')
-            print(f'FEEDBACK: {feedback}')
-            print("----------------------\n")
+            # if pose == "triangle1" or pose == "triangle2":
+            #     pose = "triangle"
+
+            data = {"pose": pose, "accuracy": rounded_accuracy, "feedback": feedback}
+            print(f"RECOGNIZED: {data}")
+
+            # print("----------------------")
+            # print(f'POSE: {pose}')
+            # print(f'ACCURACY: classes: {accuracy}, angles: {new_accuracy}')
+            # print(f'WEIGHTED: {weighted_accuracy}')
+            # print(f'FEEDBACK: {feedback}')
+            # print("----------------------\n")
 
     def run(self):
 
@@ -1825,7 +1841,7 @@ class BlazeposeDepthai:
                     50, 50), size=1, color=(240, 180, 100))
 
             # For displaying the camera view on this system
-            cv2.imshow("Blazepose", annotated_frame)
+            # cv2.imshow("Blazepose", annotated_frame)
 
             # HERE:
             # For streaming to RTMP URL
