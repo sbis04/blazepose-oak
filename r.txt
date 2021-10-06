@@ -86,7 +86,7 @@ python-jwt==2.0.1
 python-socketio==4.6.0
 PyYAML==5.4
 pyzmq==22.0.3
-requests==2.26.0
+requests==2.20.0
 requests-toolbelt==0.7.0
 rsa==4.7.2
 s3transfer==0.4.2
